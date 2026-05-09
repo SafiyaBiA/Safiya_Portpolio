@@ -637,7 +637,6 @@ window.openProject = function(id) {
     <div class="modal-divider"></div>
     <div class="modal-box__label" style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-3);margin-bottom:8px;">Project Documents</div>
     ${docList}
-    <div class="cert-add-note">To add documents: place files in <code>assets/docs/</code> and add entries in the <code>PROJECTS</code> data object in <code>script.js</code></div>
   `);
 };
 
@@ -678,7 +677,6 @@ window.openExperience = function(id) {
     <div class="modal-divider"></div>
     <div class="modal-box__label" style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-3);margin-bottom:8px;">Certificates &amp; Documents</div>
     ${docList}
-    <div class="cert-add-note">To add certificates: place PDF/image in <code>assets/docs/</code> and update the <code>EXPERIENCE</code> data in <code>script.js</code></div>
   `);
 };
 
@@ -715,9 +713,6 @@ window.openCert = function(id) {
     <div class="modal-divider"></div>
     ${displayHtml}
     ${linkHtml}
-    <div class="cert-add-note" style="margin-top:12px;">
-      To display your certificate: add <code>image: 'assets/certs/${id}.jpg'</code> in the CERTIFICATES object in <code>script.js</code>
-    </div>
   `);
 };
 
@@ -740,7 +735,6 @@ window.openAchievement = function(id) {
     <p style="font-size:15px;color:var(--text-2);line-height:1.75;margin-bottom:20px;">${a.body}</p>
     <div class="modal-box__label" style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-3);margin-bottom:8px;">Certificates &amp; Evidence</div>
     ${docList}
-    <div class="cert-add-note">To add certificates: place files in <code>assets/docs/</code> and update the <code>ACHIEVEMENTS</code> data in <code>script.js</code></div>
   `);
 };
 
