@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "python -m http.server 3000",
-    "build": "echo 'Static site - no build required'",
+    "build": "echo 'Static site deployment ready'",
     "start": "python -m http.server 3000"
   },
   "keywords": [

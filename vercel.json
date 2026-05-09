@@ -3,18 +3,6 @@
   "outputDirectory": ".",
   "env": {},
   "regions": ["iad1"],
-  "functions": {
-    "api/**/*.js": {
-      "memory": 1024,
-      "maxDuration": 60
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
   "headers": [
     {
       "source": "/assets/.*",
@@ -26,12 +14,17 @@
       ]
     },
     {
-      "source": "/.*",
+      "source": "/(index\\.html|script\\.js|styles\\.css)",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=3600, s-maxage=3600"
-        },
+        }
+      ]
+    },
+    {
+      "source": "/.*",
+      "headers": [
         {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
