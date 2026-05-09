@@ -60,7 +60,7 @@ const PROJECTS = {
       'assets/projects/phonosec5.png',
       'assets/projects/phonosec6.png',
       'assets/projects/phonosec7.png',
-      'assets/projects/phonosec-1.png',
+      'assets/projects/Phonosec-1.png',
     ],
     documents: [
       { name: 'Project Report', url: 'assets/docs/PhonoSec_Abstract.pdf' },
@@ -155,11 +155,11 @@ const EXPERIENCE = {
       'Improved analytical and problem-solving skills through project delivery.',
     ],
     screenshots: [
-      'assets/projects/Phonosec2.png',
-      'assets/projects/Phonosec3.png',
-      'assets/projects/Phonosec5.png',
-      'assets/projects/Phonosec6.png',
-      'assets/projects/Phonosec7.png',
+      'assets/projects/phonosec2.png',
+      'assets/projects/phonosec3.png',
+      'assets/projects/phonosec5.png',
+      'assets/projects/phonosec6.png',
+      'assets/projects/phonosec7.png',
       'assets/projects/Phonosec-1.png',
     ],
     documents: [
