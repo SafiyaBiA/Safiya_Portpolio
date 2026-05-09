@@ -55,11 +55,11 @@ const PROJECTS = {
     solution: 'Built a machine learning model using Python and TensorFlow to analyse voice input and classify emotions in real time using MFCC and spectral feature extraction, deployed via Flask API.',
     impact: 'Demonstrated real-time emotion analysis capability. Developed as part of ATEM Software Solutions internship, enhancing understanding of AI/ML in security.',
     screenshots: [
-      'assets/projects/Phonosec2.png',
-      'assets/projects/Phonosec3.png',
-      'assets/projects/Phonosec5.png',
-      'assets/projects/Phonosec6.png',
-      'assets/projects/Phonosec7.png',
+      'assets/projects/phonosec2.png',
+      'assets/projects/phonosec3.png',
+      'assets/projects/phonosec5.png',
+      'assets/projects/phonosec6.png',
+      'assets/projects/phonosec7.png',
       'assets/projects/Phonosec-1.png',
     ],
     documents: [
@@ -155,11 +155,11 @@ const EXPERIENCE = {
       'Improved analytical and problem-solving skills through project delivery.',
     ],
     screenshots: [
-      'assets/projects/Phonosec2.png',
-      'assets/projects/Phonosec3.png',
-      'assets/projects/Phonosec5.png',
-      'assets/projects/Phonosec6.png',
-      'assets/projects/Phonosec7.png',
+      'assets/projects/phonosec2.png',
+      'assets/projects/phonosec3.png',
+      'assets/projects/phonosec5.png',
+      'assets/projects/phonosec6.png',
+      'assets/projects/phonosec7.png',
       'assets/projects/Phonosec-1.png',
     ],
     documents: [
@@ -637,7 +637,6 @@ window.openProject = function(id) {
     <div class="modal-divider"></div>
     <div class="modal-box__label" style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-3);margin-bottom:8px;">Project Documents</div>
     ${docList}
-    <div class="cert-add-note">To add documents: place files in <code>assets/docs/</code> and add entries in the <code>PROJECTS</code> data object in <code>script.js</code></div>
   `);
 };
 
@@ -678,7 +677,6 @@ window.openExperience = function(id) {
     <div class="modal-divider"></div>
     <div class="modal-box__label" style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-3);margin-bottom:8px;">Certificates &amp; Documents</div>
     ${docList}
-    <div class="cert-add-note">To add certificates: place PDF/image in <code>assets/docs/</code> and update the <code>EXPERIENCE</code> data in <code>script.js</code></div>
   `);
 };
 
@@ -715,9 +713,6 @@ window.openCert = function(id) {
     <div class="modal-divider"></div>
     ${displayHtml}
     ${linkHtml}
-    <div class="cert-add-note" style="margin-top:12px;">
-      To display your certificate: add <code>image: 'assets/certs/${id}.jpg'</code> in the CERTIFICATES object in <code>script.js</code>
-    </div>
   `);
 };
 
@@ -740,7 +735,6 @@ window.openAchievement = function(id) {
     <p style="font-size:15px;color:var(--text-2);line-height:1.75;margin-bottom:20px;">${a.body}</p>
     <div class="modal-box__label" style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-3);margin-bottom:8px;">Certificates &amp; Evidence</div>
     ${docList}
-    <div class="cert-add-note">To add certificates: place files in <code>assets/docs/</code> and update the <code>ACHIEVEMENTS</code> data in <code>script.js</code></div>
   `);
 };
 

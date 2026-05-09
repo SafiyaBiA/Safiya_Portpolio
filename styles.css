@@ -1492,16 +1492,6 @@ button { font-family: inherit; cursor: pointer; }
   gap: 14px;
   color: var(--text-3);
 }
-.cert-add-note {
-  font-size: 13px;
-  color: var(--text-3);
-  text-align: center;
-  padding: 10px;
-  background: var(--surface);
-  border: 1px dashed var(--border-2);
-  border-radius: var(--radius-sm);
-  margin-top: 8px;
-}
 
 /* ═══════════════════════════════════════════════
    RESPONSIVE

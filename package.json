@@ -1,0 +1,22 @@
+{
+  "name": "safiya-portfolio",
+  "version": "1.0.0",
+  "description": "Safiya Bi A - Portfolio website showcasing skills, experience, and achievements",
+  "private": true,
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Static site deployment ready'",
+    "start": "python -m http.server 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "cybersecurity",
+    "software-engineer",
+    "safiya-bi-a"
+  ],
+  "author": "Safiya Bi A",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
