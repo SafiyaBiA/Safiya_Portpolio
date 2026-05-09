@@ -31,7 +31,7 @@ const PROJECTS = {
     solution: 'Developed a data-driven routing system using real-time traffic and fuel data analytics. Built interactive dashboards for fleet visibility and performance monitoring.',
     impact: 'Improved route efficiency. Awarded 2nd place at PERI CREATECH\'25 national project expo and recognised as a finalist in the Deep Blue Hackathon 2025.',
     screenshots: [
-      'assets/projects/orion4.jpeg',
+      'assets/projects/Orion4.jpeg',
       'assets/projects/Orion1.jpeg',
       'assets/projects/Orion2.jpg',
       'assets/projects/Orion3.png',
@@ -55,12 +55,12 @@ const PROJECTS = {
     solution: 'Built a machine learning model using Python and TensorFlow to analyse voice input and classify emotions in real time using MFCC and spectral feature extraction, deployed via Flask API.',
     impact: 'Demonstrated real-time emotion analysis capability. Developed as part of ATEM Software Solutions internship, enhancing understanding of AI/ML in security.',
     screenshots: [
-      'assets/projects/Phonosec2.png',
-      'assets/projects/Phonosec3.png',
-      'assets/projects/Phonosec5.png',
-      'assets/projects/Phonosec6.png',
-      'assets/projects/Phonosec7.png',
-      'assets/projects/Phonosec-1.png',
+      'assets/projects/phonosec2.png',
+      'assets/projects/phonosec3.png',
+      'assets/projects/phonosec5.png',
+      'assets/projects/phonosec6.png',
+      'assets/projects/phonosec7.png',
+      'assets/projects/phonosec-1.png',
     ],
     documents: [
       { name: 'Project Report', url: 'assets/docs/PhonoSec_Abstract.pdf' },
