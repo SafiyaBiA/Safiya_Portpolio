@@ -55,11 +55,11 @@ const PROJECTS = {
     solution: 'Built a machine learning model using Python and TensorFlow to analyse voice input and classify emotions in real time using MFCC and spectral feature extraction, deployed via Flask API.',
     impact: 'Demonstrated real-time emotion analysis capability. Developed as part of ATEM Software Solutions internship, enhancing understanding of AI/ML in security.',
     screenshots: [
-      'assets/projects/Phonosec2.png',
-      'assets/projects/Phonosec3.png',
-      'assets/projects/Phonosec5.png',
-      'assets/projects/Phonosec6.png',
-      'assets/projects/Phonosec7.png',
+      'assets/projects/phonosec2.png',
+      'assets/projects/phonosec3.png',
+      'assets/projects/phonosec5.png',
+      'assets/projects/phonosec6.png',
+      'assets/projects/phonosec7.png',
       'assets/projects/Phonosec-1.png',
     ],
     documents: [
@@ -155,11 +155,11 @@ const EXPERIENCE = {
       'Improved analytical and problem-solving skills through project delivery.',
     ],
     screenshots: [
-      'assets/projects/Phonosec2.png',
-      'assets/projects/Phonosec3.png',
-      'assets/projects/Phonosec5.png',
-      'assets/projects/Phonosec6.png',
-      'assets/projects/Phonosec7.png',
+      'assets/projects/phonosec2.png',
+      'assets/projects/phonosec3.png',
+      'assets/projects/phonosec5.png',
+      'assets/projects/phonosec6.png',
+      'assets/projects/phonosec7.png',
       'assets/projects/Phonosec-1.png',
     ],
     documents: [
