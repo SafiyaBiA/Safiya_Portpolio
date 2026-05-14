@@ -1492,7 +1492,7 @@ button { font-family: inherit; cursor: pointer; }
   gap: 14px;
   color: var(--text-3);
 }
-.cert-add-note {
+/* .cert-add-note {
   font-size: 13px;
   color: var(--text-3);
   text-align: center;
@@ -1501,7 +1501,7 @@ button { font-family: inherit; cursor: pointer; }
   border: 1px dashed var(--border-2);
   border-radius: var(--radius-sm);
   margin-top: 8px;
-}
+} */
 
 /* ═══════════════════════════════════════════════
    RESPONSIVE
