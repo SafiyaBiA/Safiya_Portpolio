@@ -673,6 +673,9 @@ button { font-family: inherit; cursor: pointer; }
   gap: 7px;
 }
 .skill-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   font-size: 13px;
   font-weight: 500;
   padding: 5px 12px;
@@ -682,6 +685,11 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--text-2);
   transition: all var(--dur);
 }
+.skill-tags i {
+  font-size: 18px;
+  line-height: 1;
+}
+
 .skill-group:hover .skill-tags span {
   border-color: var(--accent-border);
   color: var(--accent);
@@ -1303,8 +1311,8 @@ button { font-family: inherit; cursor: pointer; }
 
 .popup {
   position: fixed;
+  top: 80px;
   right: 24px;
-  bottom: 24px;
   z-index: 120;
   visibility: hidden;
   display: flex;
@@ -1324,7 +1332,7 @@ button { font-family: inherit; cursor: pointer; }
 
 @media (max-width: 720px) {
   .recommendations-layout { grid-template-columns: 1fr; }
-  .popup { right: 16px; bottom: 16px; }
+  .popup { top: 72px; right: 16px; }
 }
 
 /* ═══════════════════════════════════════════════

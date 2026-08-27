@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,13 +25,11 @@
     </a>
 
     <nav class="header__nav" aria-label="Primary navigation">
-      <a href="#about"        class="nav-link">About</a>
+      <a href="#top"         class="nav-link nav-link--home" aria-label="Home" title="Home"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 10 9-7 9 7"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg></a>
+      <a href="#about"        class="nav-link">About Me</a>
+      <a href="#projects"     class="nav-link">Project Details</a>
       <a href="#skills"       class="nav-link">Skills</a>
-      <a href="#experience"   class="nav-link">Experience</a>
-      <a href="#projects"     class="nav-link">Projects</a>
-      <a href="#achievements" class="nav-link">Awards</a>
-      <a href="#events"       class="nav-link">Events</a>
-      <a href="#contact"      class="nav-link">Contact</a>
+      <a href="#recommendations" class="nav-link">Recommendations</a>
     </nav>
 
     <div class="header__actions">
@@ -56,13 +55,11 @@
     <button class="drawer__close" id="drawerClose" aria-label="Close menu">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
-    <a href="#about"        class="drawer__link">About</a>
-    <a href="#skills"       class="drawer__link">Skills</a>
-    <a href="#experience"   class="drawer__link">Experience</a>
-    <a href="#projects"     class="drawer__link">Projects</a>
-    <a href="#achievements" class="drawer__link">Awards</a>
-    <a href="#events"       class="drawer__link">Events</a>
-    <a href="#contact"      class="drawer__link">Contact</a>
+    <a href="#top" class="drawer__link">Home</a>
+    <a href="#about" class="drawer__link">About Me</a>
+    <a href="#projects" class="drawer__link">Project Details</a>
+    <a href="#skills" class="drawer__link">Skills</a>
+    <a href="#recommendations" class="drawer__link">Recommendations</a>
   </nav>
 </div>
 
@@ -142,13 +139,14 @@
 <section class="section" id="about">
   <div class="container">
     <div class="section-header reveal">
-      <h2 class="section-title">Who I Am</h2>
+      <h2 class="section-title">About Me</h2>
       <div class="section-line"></div>
     </div>
 
     <div class="about-layout reveal">
       <div class="about-text">
-        <p class="about-lead">Computer Science undergraduate specialising in Cybersecurity, with a CGPA of 8.58. Proactive learner, hands-on builder, and IEEE student leader.</p>
+        <p class="about-lead">I am Safiya Bi A, a B.E. Cyber Security student at Sri Sai Ram Institute of Technology, Chennai, with a CGPA of 8.58.</p>
+        <p class="about-body">I am passionate about software development, cybersecurity, problem solving and building practical technology solutions.</p>
         <p class="about-body">My foundation spans programming (Python, Java, C), full-stack web and mobile development, and real-world application security testing  - gained through five internships across cybersecurity, mobile, and web domains.</p>
         <p class="about-body">I am particularly interested in how enterprise systems integrate business functions  - operations, finance, and supply chain  - and I aim to build a career bridging technology and business through structured consulting roles such as SAP implementation or enterprise transformation.</p>
         <p class="about-body">Beyond academics, I have led IEEE society chapters, coordinated international hackathons, co-chaired national symposiums, and presented research at an international conference.</p>
@@ -194,18 +192,18 @@
 <section class="section section-alt" id="skills">
   <div class="container">
     <div class="section-header reveal">
-      <h2 class="section-title">What I Work With</h2>
+      <h2 class="section-title">Skills</h2>
       <div class="section-line"></div>
     </div>
 
     <div class="skills-grid reveal">
       <div class="skill-group">
         <div class="skill-group__header">Programming</div>
-        <div class="skill-tags"><span>Python</span><span>Java</span><span>C</span></div>
+        <div class="skill-tags skill-tags--logos"><span><i class="devicon-python-plain colored" aria-hidden="true"></i>Python</span><span><i class="devicon-java-plain colored" aria-hidden="true"></i>Java</span><span><i class="devicon-c-plain colored" aria-hidden="true"></i>C</span></div>
       </div>
       <div class="skill-group">
         <div class="skill-group__header">Web &amp; Mobile</div>
-        <div class="skill-tags"><span>React.js</span><span>Node.js</span><span>JavaScript</span><span>React Native</span><span>Flutter</span><span>HTML</span><span>CSS</span></div>
+        <div class="skill-tags skill-tags--logos"><span><i class="devicon-react-original colored" aria-hidden="true"></i>React.js</span><span><i class="devicon-nodejs-plain colored" aria-hidden="true"></i>Node.js</span><span><i class="devicon-javascript-plain colored" aria-hidden="true"></i>JavaScript</span><span><i class="devicon-reactnative-original colored" aria-hidden="true"></i>React Native</span><span><i class="devicon-flutter-plain colored" aria-hidden="true"></i>Flutter</span><span><i class="devicon-html5-plain colored" aria-hidden="true"></i>HTML5</span><span><i class="devicon-css3-plain colored" aria-hidden="true"></i>CSS3</span></div>
       </div>
       <div class="skill-group">
         <div class="skill-group__header">Cybersecurity</div>
@@ -746,9 +744,10 @@
     </div>
 
     <div class="recommendations-layout reveal">
-      <div class="recommendations-list" id="all_recommendations">
-        <div class="recommendation"><span>“</span> Safiya is a dedicated and talented developer with excellent problem-solving skills. <span>”</span></div>
-      </div>
+  <div class="recommendations-list" id="all_recommendations">
+  <div class="recommendation"><span>“</span> Safiya is a dedicated learner with a strong interest in cybersecurity and software development. <span>”</span></div>
+  <div class="recommendation"><span>“</span> She demonstrates good teamwork, leadership and enthusiasm while working on technical projects. <span>”</span></div>
+  </div>
 
       <form class="recommendation-form" onsubmit="event.preventDefault(); addRecommendation();">
         <label for="new_recommendation">Leave a recommendation</label>
