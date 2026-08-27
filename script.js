@@ -741,6 +741,38 @@ window.openAchievement = function(id) {
 };
 
 // ──────────────────────────────────────────────────
+// RECOMMENDATIONS
+// ──────────────────────────────────────────────────
+
+window.addRecommendation = function() {
+  const recommendation = document.getElementById('new_recommendation');
+  const recommendations = document.getElementById('all_recommendations');
+
+  if (!recommendation || !recommendations || recommendation.value.trim() === '') {
+    return;
+  }
+
+  const newRecommendation = document.createElement('div');
+  newRecommendation.className = 'recommendation';
+
+  const openingQuote = document.createElement('span');
+  openingQuote.textContent = '“';
+  const closingQuote = document.createElement('span');
+  closingQuote.textContent = '”';
+  newRecommendation.append(openingQuote, document.createTextNode(` ${recommendation.value.trim()} `), closingQuote);
+
+  recommendations.appendChild(newRecommendation);
+  recommendation.value = '';
+  window.showPopup(true);
+};
+
+window.showPopup = function(bool) {
+  const popup = document.getElementById('popup');
+  if (!popup) return;
+  popup.style.visibility = bool ? 'visible' : 'hidden';
+};
+
+// ──────────────────────────────────────────────────
 // FOOTER YEAR
 // ──────────────────────────────────────────────────
 

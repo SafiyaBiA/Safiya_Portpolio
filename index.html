@@ -736,6 +736,30 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════
+     RECOMMENDATIONS
+══════════════════════════════════════════════════ -->
+<section class="section recommendations-section" id="recommendations">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2 class="section-title">Recommendations</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="recommendations-layout reveal">
+      <div class="recommendations-list" id="all_recommendations">
+        <div class="recommendation"><span>“</span> Safiya is a dedicated and talented developer with excellent problem-solving skills. <span>”</span></div>
+      </div>
+
+      <form class="recommendation-form" onsubmit="event.preventDefault(); addRecommendation();">
+        <label for="new_recommendation">Leave a recommendation</label>
+        <textarea id="new_recommendation" placeholder="Write a recommendation..." rows="5"></textarea>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
      CONTACT
 ══════════════════════════════════════════════════ -->
 <section class="section" id="contact">
@@ -841,6 +865,11 @@
     </button>
     <div class="modal__content" id="modalContent"></div>
   </div>
+</div>
+
+<div id="popup" class="popup" role="status" aria-live="polite" aria-label="Recommendation submitted">
+  <p>Thank you for your recommendation!</p>
+  <button class="btn btn-outline" type="button" onclick="showPopup(false)">Close</button>
 </div>
 
 <!-- Back to top -->

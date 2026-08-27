@@ -1236,8 +1236,100 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* ═══════════════════════════════════════════════
-   MODAL
-═══════════════════════════════════════════════ */
+  RECOMMENDATIONS
+  ═══════════════════════════════════════════════ */
+.recommendations-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.recommendations-list {
+  display: grid;
+  gap: 14px;
+}
+
+.recommendation {
+  padding: 22px 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-2);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.recommendation span {
+  color: var(--accent);
+  font-size: 26px;
+  line-height: 0;
+  vertical-align: -3px;
+}
+
+.recommendation-form {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.recommendation-form label {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.recommendation-form textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 120px;
+  padding: 12px 14px;
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius-sm);
+  background: var(--bg-2);
+  color: var(--text);
+  font: inherit;
+  line-height: 1.5;
+}
+
+.recommendation-form textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.popup {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 120;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: min(420px, calc(100vw - 48px));
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  color: var(--text);
+}
+
+.popup p { font-size: 14px; }
+.popup .btn { flex-shrink: 0; padding: 8px 14px; }
+
+@media (max-width: 720px) {
+  .recommendations-layout { grid-template-columns: 1fr; }
+  .popup { right: 16px; bottom: 16px; }
+}
+
+/* ═══════════════════════════════════════════════
+  MODAL
+  ═══════════════════════════════════════════════ */
 .modal {
   position: fixed;
   inset: 0;
